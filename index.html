@@ -61,7 +61,7 @@
                 
                 I am always eager to learn new technologies, explore innovative ideas, and enhance my problem-solving abilities. Whether it's web development, digital marketing, or content creation, I am passionate about growing my expertise and making a meaningful impact in the digital world.                
            </p>
-           <a href="#" class="btn-box">More About Me</a>
+           <button class="btn-box">More About Me</button>
         </div>
     </section>
 
@@ -95,16 +95,31 @@
         </div>
     </section>
 
-    <!--PORTFOLIO SECETION-->
-    <section class="portfolio" id="portfolio">
-        <h2 class="headding"><span>Projects</span></h2>
-
-        <div class="portfolio-container">
-            <div class="portfolio-box">
-                <img src="" alt="">
-            </div>
-        </div>
-    </section>
+    <!--Contact-->
+        <section class="portfolio-form-section">
+            <h2>Contact Me</h2>
+            <p>Feel free to reach out for any project inquiries or just to say hi!</p>
+            <form action="#" method="POST" class="portfolio-form">
+                <div class="form-group">
+                    <label for="name">Your Name</label>
+                    <input type="text" id="name" name="name" placeholder="Your name" required>
+                </div>
+    
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email" placeholder="Your email" required>
+                </div>
+    
+                <div class="form-group">
+                    <label for="message">Your Message</label>
+                    <textarea id="message" name="message" rows="4" placeholder="Your message" required></textarea>
+                </div>
+    
+                <div class="form-group">
+                    <button type="submit" class="submit-btn">Send Message</button>
+                </div>
+            </form>
+        </section>    
     <script src="index.js"> </script>
 </body>
 </html>
