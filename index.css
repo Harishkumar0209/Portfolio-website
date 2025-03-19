@@ -13,7 +13,6 @@
 body {
     background:url(images/bbg-images.png);
     height: 100%;
-
 }
 section {
     min-height: 100vh;
@@ -29,6 +28,7 @@ nav {
     position: fixed;
     z-index: 10;
     padding: 10px 0px;
+    border: 2px solid white;
 }
 .logo h1 {
     color: #0ef;
@@ -36,8 +36,8 @@ nav {
 
 nav li{
     display: inline-block;
-    margin:15px 10px;
-    font-size: 19px;
+    margin-left: 35px;
+    font-size: 23px;
 }
 nav a{
     text-decoration: none;
@@ -47,9 +47,12 @@ nav a:hover{
     text-decoration: underline;
     color: aliceblue;
 }
+ul li.active a{
+    color: #7cf03d;
+}
 .menu-line {
     height: 3px;
-    width: 20px;
+    width: 23px;
     background-color: #0ef;
     margin-bottom: 3px;
 }
@@ -59,16 +62,19 @@ nav a:hover{
     display: none;
 }
 
-@media all and (max-width:640px){
+@media all and (max-width:766px){
     nav{
         flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border: 2px solid red;
     }
     nav li{
         display: block;
         padding: 10px;
     }
     ul {
-        text-align: center;
+        align-items: center;
         padding: 0;
     }
     .logo {
@@ -79,7 +85,11 @@ nav a:hover{
         display: block;
         position: absolute;
         right: 20px;
-        top: 25px;
+        top: 34px;
+    }
+    
+    ul.showmenu {
+        display: none;
     }
 }
 .home {
@@ -88,7 +98,6 @@ nav a:hover{
     background-size: cover;
     background-repeat: no-repeat;
     height: 100%;
-
 }
 .home-content {
     position: absolute;
@@ -306,7 +315,6 @@ span {
     0 0 25px cyan, 0 0 50px cyan, 
     0 0 100px cyan, 0 0 200px cyan;
 }
-
 @keyframes slideRight {
     0% {
         transform: translateX(-100px);
