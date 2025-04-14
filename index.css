@@ -12,6 +12,9 @@
 
 body {
     background:url(images/bbg-images.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     height: 100%;
 }
 section {
@@ -91,6 +94,9 @@ ul li.active a{
     ul.showmenu {
         display: none;
     }
+    .home-content p {
+        font-size: 15px;
+    }
     .about {
         flex-wrap: wrap;     
     }
@@ -108,7 +114,7 @@ ul li.active a{
     }
 }
 .home {
-    background-image: url(images/background-img.jpg);
+    background-image: url(images/bg-images-01.jpeg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -219,7 +225,7 @@ span {
     box-shadow: 0 0 5px #0ef,
     0 0 25px #0ef;
 }
-
+/* 
 @keyframes floatImage {
     0% {
         transform: translateY(0);
@@ -230,7 +236,7 @@ span {
     100% {
         transform: translateY(0);
     }
-}
+} */
 
 .about-text h2 {
     font-size: 50px;
@@ -355,10 +361,11 @@ h2 {
     margin-bottom: 10px;
     font-size: 24px;
 }
-p {
+.services-list p {
     text-align: center;
     margin-bottom: 20px;
-    color: #777;
+    color: rgb(255, 255, 255);
+    font-size: 17px;
 }
 .portfolio-form-section {
     display: block;
@@ -402,7 +409,7 @@ input:focus, textarea:focus {
 }
 
 .submit-btn:hover {
-    background-color: #0056b3;
+    background-color: rgb(233, 122, 128);
 }
 
 @media screen and (max-width: 768px) {
@@ -415,92 +422,20 @@ input:focus, textarea:focus {
 
 }
 footer {
-    background-color: #222;
+    background-color: #081b29;
+    margin-top: 30px;
+    padding: 20px 0px;
 }
-#contact {
-    margin-top: 40px;
-}
-
-.whole-back {
+.icons ul {
     display: flex;
-    justify-content: space-evenly;
-    padding: 20px;
-}
-
-.first h1 {
-    color: azure;
-    padding: 10px 0px;
-    font-size: 40px;
-}
-
-.second h1 {
-    color: #d86919;
-    padding: 10px 0px;
-}
-
-.second p {
-    color: aliceblue;
-    font-size: 18px;
-    width: 330px;
-}
-
-.second {
-    margin: 30px 0px;
-}
-
-.third h1 {
-    color: #d86919;
-    margin: 10px 0px;
-}
-
-.third p {
-    color: aliceblue;
-    padding: 10px 0px;
-}
-.third ul li {
-    list-style-type: none;
-    
-}
-
-.third ul li i {
-    color: #d3732e;
-    margin: 10px;
-}
-
-.third ul li a {
-    text-decoration: none;
-    color: antiquewhite;
-}
-
-
-.list h3 {
-    font-size: 24px;
-    color: #d86919;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    margin: 10px 0px;
-}
-
-.list ul li {
-    color: aliceblue;
-    list-style-type: none;
-    padding: 8px 0px;
-    font-weight: bold;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-}
-
-.horizontal-line {
-    margin: 0% 10%;
-}
-
-.footer-bottom {
-    text-align: center;
-    padding: 20px;
+    justify-content: center;
+    align-items: center;
 }
 
 .icons ul li {
     list-style-type: none;
     display: inline-block;
-    padding: 10px;
+    padding: 15px;
 }
 
 .icons ul li a {
@@ -509,103 +444,19 @@ footer {
 }
 
 .icons ul li a i {
-    font-size: 30px;
+    font-size: 40px;
 }
 
-.copyright {
+.copyright p {
     color: white;
     margin-top: 20px;
+    font-weight: 600;
+    text-align: center;
+    font-size: 20px;
 }
 
-@media (max-width:1024px) {
-
-    .bgimg {
-        height: 500px;
-    }
-
-    .bgimg-text {
-        top: 5%;
-    }
-
-    .right-content img { 
-        width: 390px;
-    }
-
-    .left-content {
-        padding: 10px;
-    }
-
-    .left-item img {
-        width: 390px;
-        height: 350px;
-    }
-
-    .right-item {
-        padding: 10px;
-    }
-
-    .right-item p {
-        align-items: center;
-        text-align: justify;
-    }
+.button2 {
+    padding: 20px 15px;
+    border: 2px solid white;
+    background-color: #d86919;
 }
-
-
-@media (max-width:768px) {
-    .content {
-        display: block;
-        text-align: center;
-    }
-
-    .bgimg-text {
-        bottom: 165px;
-    }
-
-    .bgimg-text h1 {
-        font-size: 32px;
-    }
-
-    .bgimg-text h2 {
-        font-size: 35px;
-    }
-
-    .bgimg-text p {
-        font-size: 18px;
-        text-align: justify;
-        width: 70vw;
-    }
-    .bgimg-text button {
-        width: 100px;
-    }
-    .navigation {
-        display: block;
-    }
-    .content p {
-        text-align: justify;
-        align-items: center;
-        width: 90vw;
-    }
-
-    .right-content img {
-        margin: 20px 0px;
-    }
- 
-    .right-item {
-        margin-top: 20px;
-    }
-
-    .right-item p {
-        width: 90vw;
-    }
-
-    .items {
-        display: block;
-        text-align: center;
-    }
-
-    .whole-back {
-        flex-wrap: wrap;
-    }
-}
-
-

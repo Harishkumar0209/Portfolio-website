@@ -12,3 +12,9 @@ var typed = new Typed(".text", {
     looped:true
 });
 
+function show() {
+    alert("Thanks! for visit my page 'your message has been send'");
+}
+
+
+
