@@ -12,9 +12,19 @@
     text-align: center;
 }
 .img img{
-    width: 300px;
-    height: 240px;
+    width: 262px;
+    height: 220px;
+    display: block;
+    margin: auto;
+    border: 1px solid white;
 }
+.img img:hover{
+    cursor: pointer;
+    transform: scale(1.1); /* Zoom effect */
+    opacity: 0.8; /* Slight transparency */
+    box-shadow: 0 0 20px #0ef;
+}
+
 .skill-title{
     margin: 0px 25px;
 }
@@ -22,12 +32,14 @@
     color: rgb(255, 255, 255);
     font-size: 40px;
     margin: 10px 0px;
+    text-align: center;
 }
 .skill-title p{
     color: rgb(255, 255, 255);
     font-weight: 900;
     font-size: 20px;
     line-height: 1.5;
+    text-align: justify;
 }
 @media all and (max-width:768px){
     nav{
