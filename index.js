@@ -4,17 +4,10 @@ menu.addEventListener('click',()=>{
     menuList.classList.toggle('showmenu')
 })
 
-var typed = new Typed(".text", {
-    Strings:["Frontend Developer" , "Web Developer", "Digital Marketer", "Content Writer"],
-    typeSpeed:100,
-    backSpeed:100,
-    backDelay:100,
-    looped:true
-});
+
 
 function show() {
     alert("Thanks! for visit my page 'your message has been send'");
 }
-
 
 
